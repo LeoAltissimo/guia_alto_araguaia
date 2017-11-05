@@ -1,0 +1,207 @@
+/*menu de scroll */
+
+#MenuScroll{
+	top: -55px;
+	left: 0;
+	transition: top 0.8s;
+}
+
+/* Video Background */
+
+#bgvid { 
+  position: fixed;
+  min-width: 100%;
+  min-height: 50vh;
+  z-index: -100;
+}
+
+#cabecalho{
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Logo */
+
+#cabecalho h1{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: white;
+	font-size: 32px;
+	font-family: CGothic;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+#cabecalho h1 span{ color: #DAC63B; }
+
+/* search Input */
+
+.searchInput{ background-color: rgba(0,0,0,0.25); }
+
+.searchInput:focus{	outline: none; }
+
+.search button{ transition: left 0.8s, color 0.6s; }
+
+/* Botoes de menu e login */
+
+#botoes{
+	margin-bottom: 10px;
+	margin-left: 3%;
+	align-self: baseline;
+}
+
+#botoes button{
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 30px;
+	transition: font-size 0.7s;
+	cursor: pointer;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+#botoes button:hover { font-size: 40px; }
+
+#search button:focus, #botoes button:focus { outline: none; }
+
+/* Slideshow container */
+
+.mySlides {display:none}
+
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.slideButton{
+	width: 5%;
+	height: 15%;
+	position: absolute;
+	bottom: 50%;
+	background-color: rgba(40, 45, 64,0.7);
+	z-index: 1;
+	border: none;
+	cursor: pointer;
+
+	color: white;
+	font-size: 30px;
+
+	transition: color 0.5s, font-size 0.5s;
+}
+
+.slideButton:hover{
+	color: #C8B533;
+	font-size: 38px;
+}
+
+.slideButton:focus{	outline: none; }
+
+#slideButtonProx{ left: 95%; border-radius: 15px 0 0 15px; }
+
+#slideButtonAnt{ border-radius: 0 15px 15px 0; }
+
+#pontos{ margin: auto; }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active { background-color: #C8B533; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Parte de artigos */
+
+.SecTitulo{
+	margin-top: 60px;
+	color: #282D40;
+	font-size: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#containerArtigos{
+	width: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#containerArtigosPequenos{
+	width: 49%;
+	height: auto;
+	position: relative;
+	margin-right: 2%;
+}
+
+#artigo3{ width: 49%; height: auto; }
+
+#artigo1{ margin-bottom: 10px; }
+
+#artigo1 ,#artigo2, #artigo3{ position: relative; overflow: hidden; }
+
+.artigoTitulo{
+	position: absolute;
+	top: 15px;
+	left: 12px;
+}
+
+.artigoBK{
+	width: 100%;
+	height: auto;
+	transition: transform 0.4s;
+}
+
+.artigoBK:hover{ transform: scale(1.1); }
+
+.artigo h3{
+	margin: 0;
+	color:white;
+	font-size: 27px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.semiBorder{
+	width: 35%;
+	height: 5px;
+	margin-top: 5px;
+	background-color: #C8B533;
+}

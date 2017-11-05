@@ -1,0 +1,56 @@
+.containerTodosResultados{
+	width: 70%;
+	margin-top: 105px;
+}
+
+.containerResultado{
+	margin: 30px 0;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoEmpresa{
+	width: 200px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 50px;
+	background-image: url(../img/EmpresasDestaque1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.nomeEmpresa{
+	color: #C8B533;
+	font-family: CGothic;
+	font-size: 28px;
+	margin: 0;
+}
+
+.DescricaoEmpresa{
+	font-size: 17px;
+}
+
+
+/* paginacao */
+
+.paginacao {
+    display: inline-block;
+}
+
+.paginacao a {
+	font-weight: bold;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.paginacao a.active {
+    background-color: #282D40;
+    color: #C8B533;
+    border: 1px solid #282D40;
+}

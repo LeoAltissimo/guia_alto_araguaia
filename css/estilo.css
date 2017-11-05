@@ -1,0 +1,266 @@
+@font-face{
+	font-family: CGothic;
+	src: url(../font/CenturyGothic.ttf);
+}
+
+body{ margin: 0px; }
+
+*{ box-sizing: border-box; }
+
+/*menu de scroll */
+
+#MenuScroll{
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+	height: 55px;
+	background-color: #282D40 ;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	transition: top 0.8s;
+}
+
+#MenuScroll h1{
+	font-size: 17px;
+	color:white;
+	font-family: CGothic;
+
+	margin-right: 50%;
+}
+
+#MenuScroll h1 a:link,#MenuScroll h1 a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.mainButtons{
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 30px;
+	transition: font-size 0.7s;
+	cursor: pointer;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+	margin: 0 10px;
+}
+
+.mainButtons:focus{ outline: none; }
+
+#searchScroll{ height: 40px; }
+
+#MenuScroll .searchInput{ background-color: transparent; }
+
+/* Menu de Categorias */
+
+#containerMenu{
+	z-index: 2;
+	width: 35%;
+	min-width: 300px;
+	position: fixed;
+	left: 10px;
+	top: -800px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	transition: top 0.8s;
+}
+
+#MenuCatergorias{
+	width: 90%;
+	height: 70vh;
+	background-color: rgba(40, 45, 64,0.7);
+	border-radius: 0 0 30px 30px;
+	overflow-y: auto;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+#MenuCatergorias::-webkit-scrollbar { display: none; }
+
+
+#MenuCatergorias a{
+	width: 100%;
+	padding: 10px 0;
+	padding-left: 60px;
+	cursor: pointer;
+
+	color: white;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	transition: color 0.4s;
+}
+
+#MenuCatergorias a:hover{ color: #DAC63B; }
+
+#MenuCatergorias i{	font-size: 25px; margin: 5px; }
+
+#exitButton{
+	background-color: rgba(40, 45, 64,0.7);
+	border: none;
+	border-radius: 0 0 10px 0;
+	width: 10%;
+
+	color:white;
+	font-size: 28px;
+}
+
+#exitButton:focus{ outline: none;}
+
+/* search Input */
+
+.search{ width: 30%; min-width: 300px; }
+
+.searchInput{
+	width: 100%;
+	height: 40px;
+	padding: 0 7px;
+
+	background-color: rgba(0,0,0,0.25);
+	border: 3px solid white;
+	border-radius: 20px;
+
+	color: white;
+	font-size: 15px;
+}
+
+.searchInput:focus{	outline: none; }
+
+.search button{
+	position: relative;
+	bottom: 37px;
+	left: 88%;
+
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 25px;
+}
+
+
+/* Corpo do site */
+
+.corpo{
+	background-color: #EBEBEB;
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Baner anuncie conosco */
+
+#Contratebanner{
+	width: 80%;
+	height: 50px;
+	background-color: #282D40;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+#plusContainer{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin: 10px;
+}
+
+.fa-plus{ color: #C8B533; position: absolute; }
+
+#plus1{
+	font-size: 15px;
+	top: 8px;
+	left: 5px;
+}
+
+#plus2{
+	font-size: 45px;
+	top: 0px;
+	left: 26px;
+}
+
+#plus3{
+	font-size: 15px;
+	top: 28px;
+	left: 14px;
+}
+
+.bannerChamada{
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#lucrosIcon{
+	color: #C8B533;
+	font-size: 50px;
+	margin: 10px;
+}
+
+/* Destaques da cidade */
+
+#containerDestaquesCidade{
+	padding-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.destaqueCidade{ width: 14.29%;	height: auto; }
+
+.destaqueCidade img{ width: 100%; height: auto; }
+
+@keyframes mudaDestaque {
+	0%{opacity: 1;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+/* Rodape */
+footer{
+	z-index: -1;
+	position: fixed !important;
+	bottom:0px;
+	width: 100%;
+	height: 200px;
+	padding: 30px;
+	background-color: #1d2130;
+	color: #95989A;
+	line-height: 0.8;
+	position: relative;
+}
+
+#links{
+	width: 40%;
+	column-count: 2;
+	column-width: 20px;
+	column-rule: 1px solid #95989A;
+}
+
+#links li{ list-style-type:none; margin-bottom: 12px; }
+
+#final{
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	width: 100%;
+	background-color: #131620;
+	text-align: right;
+}

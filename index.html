@@ -1,0 +1,219 @@
+<!DOCTYPe html>
+<html>
+<head>
+	<title>Guia Alto Araguaia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estiloIndex.css">
+</head>
+<body onscroll="checkScrollMenu()">
+	<!-- Menu quando da scroll -->
+	<header id="MenuScroll">
+		<button id="navScroll" class="mainButtons" onclick="openMenuCateIndex()"><i class="fa fa-navicon"></i></button>
+		<h1><span style="color:#C8B533;">Guia </span>Alto Araguaia</h1>
+		<form id="searchScroll" class="search">
+			<input class="searchInput" type="text" name="search" 
+			placeholder="(Bares, Academias, restaurantes ...)" 
+			autocomplete="on">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<button class="mainButtons"><i class="fa fa-user"></i></button>
+	</header>
+	<!-- FIM Menu quando da scroll -->
+	<!-- Menu de categoria -->
+	<div id="containerMenu">
+		 <nav id="MenuCatergorias">
+		 	<a href="busca.html"><i class="preNavIco fa fa-line-chart"></i>Anuncie no site</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-birthday-cake"></i>Eventos</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-bed"></i>Hoteis</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-cutlery"></i>Gastronomia</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-rocket"></i>Lazer</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-tint"></i>Postos</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-shopping-bag"></i>Roupas</a>
+		 	<a href="busca.html"i class="preNavIco fa fa-shopping-cart"></i>Mercados</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-usd"></i>Bancos</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-shopping-basket"></i>Comércio</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-ambulance"></i>Saúde</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-car"></i>Automotivos</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-microchip"></i>Informática</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-graduation-cap"></i>Educação</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-university"></i>Serviços Públicos</a>
+		 	<a href="busca.html"><i class="preNavIco fa fa-wrench"></i>Contrução</a>
+		 </nav>
+		 <button id="exitButton" onclick="closeMenuCate()">
+		 	<i class="	fa fa-close"></i>
+		 </button>
+	</div>
+	<!-- FIM Menu de categoria -->
+	<!-- Cabeçalho da página -->
+	<header id="cabecalho">
+		<video id="bgvid" poster="img/BackGround1.jpg" playsinline autoplay muted loop>
+			<source type="video/mp4" src="img/city.mp4">
+		</video>
+		<h1><span class="cor">Guia</span>Alto Araguaia</h1>
+		<form class="search">
+			<input class="searchInput" type="text" name="search" 
+				placeholder="(Bares, Academias, restaurantes ...)" 
+				autocomplete="on" onmouseover="hideSearshIco()" 
+				onmouseout="unhideSearshIco()">
+			<button id="searchButton"><i class="fa fa-search">\</i></button>
+		</form>
+		<div id="botoes">
+			<button onclick="openMenuCateIndex()"><i class="fa fa-navicon"></i></button>
+			<button><i class="fa fa-user"></i></button>
+		</div>
+	</header>
+	<!-- FIM Cabeçalho da página -->
+	<!-- Slide de Empresas Destaques -->
+	<section class="corpo">
+		<div class="slideshow-container">
+
+			<button id="slideButtonAnt" class="slideButton" onclick="slideAnt();">
+				<i class="fa fa-angle-left"></i>
+			</button>
+
+			<button id="slideButtonProx" class="slideButton" onclick="slideProx();">
+				<i class="fa fa-angle-right"></i>
+			</button>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <a href="anuncio.html">
+			  <img alt="Destaque de Alto Araguaia" src="img/bannerCarrosel.jpg" style="width:100%">
+			  </a>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <a href="anuncio.html">
+			  <img alt="Destaque de Alto Araguaia" src="img/bannerCarrosel2.jpg" style="width:100%">
+			  </a>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <a href="anuncio.html">
+			  <img alt="Destaque de Alto Araguaia" src="img/bannerCarrosel3.jpg" style="width:100%">
+			  </a>
+			</div>
+
+			<div id="pontos" style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+			</div>
+		</div>
+		<!-- Banner chamada para Anuncuar no site -->
+		<div id="Contratebanner">
+			<div id="plusContainer">
+				<i class="fa fa-plus" id="plus1"></i>
+				<i class="fa fa-plus" id="plus2"></i>
+				<i class="fa fa-plus" id="plus3"></i>
+			</div>
+			<h4 class="bannerChamada">Anuncie conosco!</h4>
+			<i id="lucrosIcon" class="fa fa-line-chart"></i>
+			<h4 class="bannerChamada">Aumente a visibilidade da sua empresa</h4>
+		</div>
+		<!-- FIM Banner chamada para Anuncuar no site -->
+	</section>
+	<!-- FIM Slide de Empresas Destaques -->
+	<!-- Artigos em Destaque -->
+	<section class="corpo">
+		<h2 class="SecTitulo">Conehça a Cidade</h2>
+		<div id="containerArtigos">
+		<div id="containerArtigosPequenos">
+			<div id="artigo1" class="artigo artgoPequeno">
+				<a href="artigo.html">
+				<img class="artigoBK" alt="Imagem do artigo" src="img/DestaqueNoticiaPequeno.jpg">
+					<div class="artigoTitulo">
+						<h3>O Festival Náutico</h3>
+						<div class="semiBorder"></div>
+					</div>
+				</a>
+			</div>
+			<div id="artigo2" class="artigo artgoPequeno">
+				<a href="http://www.aia.unemat.br/">
+				<img class="artigoBK" alt="Imagem do artigo" src="img/DestaqueNoticiaPequeno2.jpg">
+				<div class="artigoTitulo">
+					<h3>A UNEMAT de Alto Araguaia</h3>
+					<div class="semiBorder"></div>
+				</div>
+			</a>
+			</div>
+		</div>
+		<div id="artigo3" class="artigo artigogrande">
+			<a href="artigo.html">
+			<img class="artigoBK" alt="Imagem do artigo" src="img/DestaqueNoticiaGrande.jpg">
+			<div class="artigoTitulo">
+				<h3>Conheça as belezas de Alto Araguaia</h3>
+				<div class="semiBorder"></div>
+			</div>
+		</a>
+		</div>
+		</div>
+	</section>
+	<!-- FIM Artigos em Destaque -->
+	<!-- Empresas Destaque -->
+	<section class="corpo" style="margin-bottom: 200px;">
+		<h2 class="SecTitulo">Destaques da Cidade</h2>
+
+		<div id="containerDestaquesCidade">
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque1.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque2.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque3.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque4.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque5.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque6.jpg">
+				</a>
+			</div>
+			<div class="destaqueCidade">
+				<a href="anuncio.html">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque7.jpg">
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- FIM Empresas Destaque -->
+	<!-- Rodapé do site -->
+	<footer>
+		<div id="links">
+			<ul>
+			<li><a>Anuncie Conosco!</a></li>
+			<li><a>Contato</a></li>
+			<li><a>Termos e Políticas</a></li>
+			<li><a>Relatar Algum Problema</a></li>
+			<li><a>sugerir Artigos</a></li>
+			<li><a>Dúvidas</a></li>
+			</ul>
+		</div>
+		<div id="final">
+			<p>&copy; Todos os direitos reservados .</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/fucoes.js"></script>
+</body>
+</html>

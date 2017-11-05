@@ -1,0 +1,123 @@
+<!DOCTYPe html>
+<html>
+<head>
+	<title>Nome do artigo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estiloArtigo.css">
+</head>
+<body>
+	<!-- Menu -->
+	<header id="MenuScroll">
+		<button id="navScroll" class="mainButtons" onclick="openMenuCate()"><i class="fa fa-navicon"></i></button>
+		<h1><span style="color:#C8B533;">Guia </span>Alto Araguaia</h1>
+		<form id="searchScroll" class="search">
+			<input class="searchInput" type="text" name="search" 
+			placeholder="(Bares, Academias, restaurantes ...)" 
+			autocomplete="on">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<button class="mainButtons"><i class="fa fa-user"></i></button>
+	</header>
+	<!-- FIM Menu quando da scroll -->
+	<!-- Menu de categoria -->
+	<div id="containerMenu">
+		 <nav id="MenuCatergorias">
+		 	<a><i class="preNavIco fa fa-line-chart"></i>Anuncie no site</a>
+		 	<a><i class="preNavIco fa fa-birthday-cake"></i>Eventos</a>
+		 	<a><i class="preNavIco fa fa-bed"></i>Hoteis</a>
+		 	<a><i class="preNavIco fa fa-cutlery"></i>Gastronomia</a>
+		 	<a><i class="preNavIco fa fa-rocket"></i>Lazer</a>
+		 	<a><i class="preNavIco fa fa-tint"></i>Postos</a>
+		 	<a><i class="preNavIco fa fa-shopping-bag"></i>Roupas</a>
+		 	<a><i class="preNavIco fa fa-shopping-cart"></i>Mercados</a>
+		 	<a><i class="preNavIco fa fa-usd"></i>Bancos</a>
+		 	<a><i class="preNavIco fa fa-shopping-basket"></i>Comércio</a>
+		 	<a><i class="preNavIco fa fa-ambulance"></i>Saúde</a>
+		 	<a><i class="preNavIco fa fa-car"></i>Automotivos</a>
+		 	<a><i class="preNavIco fa fa-microchip"></i>Informática</a>
+		 	<a><i class="preNavIco fa fa-graduation-cap"></i>Educação</a>
+		 	<a><i class="preNavIco fa fa-university"></i>Serviços Públicos</a>
+		 	<a><i class="preNavIco fa fa-wrench"></i>Contrução</a>
+		 </nav>
+		 <button id="exitButton" onclick="closeMenuCate()">
+		 	<i class="	fa fa-close"></i>
+		 </button>
+	</div>
+	<!-- FIM Menu de categoria -->
+	<!-- Corpo do artigo -->
+	<main class="corpo">
+		<div id="imagemBanner"></div>
+
+		<article id="corpoArtigo" class="corpo">
+			<header id="containerTitulos" class="corpo">
+				<h1>Titulo do artigo</h1>
+				<h4>
+					Subtítulo do artigo Neque porro quisquam est qui dolorem ipsum 
+					quia dolor sit amet, consectetur, adipisci ve
+				</h4>
+				<p id="autorArtigo">Por: Nome do autor</p>
+			</header>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat hendrerit gravida. Maecenas commodo quam in felis fringilla tincidunt. Suspendisse ante arcu, gravida at tortor et, consequat malesuada ipsum. Suspendisse facilisis molestie turpis, eget rutrum dolor sollicitudin et. Curabitur mattis imperdiet pharetra. Nunc id lacus luctus, elementum enim quis, tempor diam. Cras pretium, diam in eleifend lacinia, nisl orci accumsan nulla, non dictum orci nibh sed purus. Nullam tempus quam non dolor imperdiet commodo.<br>
+
+				Phasellus quam arcu, vulputate in egestas nec, sagittis id urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eu nulla dui. Sed sapien ligula, lobortis et tortor a, dignissim vulputate nunc. Curabitur luctus ipsum ut lorem venenatis, a maximus tortor efficitur. Nullam id efficitur ligula.<br>
+
+				Pellentesque sed pellentesque urna. Aliquam quis arcu venenatis augue malesuada feugiat. Donec nec suscipit turpis. Nullam at maximus nibh, sit amet egestas est. In gravida turpis sed condimentum sodales. Sed condimentum finibus urna id sollicitudin. Integer ut commodo diam. Donec in arcu a dui tristique gravida. Morbi eget blandit tellus. Proin fringilla purus ex, vitae egestas massa tempor ut. Suspendisse potenti. Etiam consequat gravida ultricies. Aliquam nunc elit, porttitor ac euismod tempor, ultrices pulvinar ligula. Quisque ac accumsan eros, vulputate suscipit nulla. Morbi ornare nisi ac fringilla mattis.<br>
+
+				<img alt="imagem do Artigo" src="img/DestaqueNoticiaPequeno.jpg">
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat hendrerit gravida. Maecenas commodo quam in felis fringilla tincidunt. Suspendisse ante arcu, gravida at tortor et, consequat malesuada ipsum. Suspendisse facilisis molestie turpis, eget rutrum dolor sollicitudin et. Curabitur mattis imperdiet pharetra. Nunc id lacus luctus, elementum enim quis, tempor diam. Cras pretium, diam in eleifend lacinia, nisl orci accumsan nulla, non dictum orci nibh sed purus. Nullam tempus quam non dolor imperdiet commodo.<br>
+
+				Phasellus quam arcu, vulputate in egestas nec, sagittis id urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eu nulla dui. Sed sapien ligula, lobortis et tortor a, dignissim vulputate nunc. Curabitur luctus ipsum ut lorem venenatis, a maximus tortor efficitur. Nullam id efficitur ligula.
+				</p>
+		</article>
+	</main>
+	<!-- FIM Corpo do artigo -->
+	<!-- Empresas Destaque -->
+	<section class="corpo" style="margin-bottom: 200px;">
+		<div id="containerDestaquesCidade">
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque1.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque2.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque3.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque4.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque5.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque6.jpg">
+			</div>
+			<div class="destaqueCidade">
+				<img alt="Empresa destaque" src="img/EmpresasDestaque7.jpg">
+			</div>
+		</div>
+	</section>
+	<!-- FIM Empresas Destaque -->
+	<!-- Rodapé do site -->
+	<footer>
+		<div id="links">
+			<ul>
+			<li><a>Anuncie Conosco!</a></li>
+			<li><a>Contato</a></li>
+			<li><a>Termos e Políticas</a></li>
+			<li><a>Relatar Algum Problema</a></li>
+			<li><a>sugerir Artigos</a></li>
+			<li><a>Dúvidas</a></li>
+			</ul>
+		</div>
+		<div id="final">
+			<p>&copy; Todos os direitos reservados .</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/fucoes.js"></script>
+</body>
